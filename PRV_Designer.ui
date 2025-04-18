@@ -1,0 +1,2386 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1009</width>
+    <height>889</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>ChemTech - PRV Designer</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="tab">
+       <attribute name="title">
+        <string>General Information</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_10">
+        <item row="1" column="0">
+         <widget class="QScrollArea" name="general_info">
+          <property name="widgetResizable">
+           <bool>true</bool>
+          </property>
+          <widget class="QWidget" name="scrollAreaWidgetContents">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>-130</y>
+             <width>948</width>
+             <height>955</height>
+            </rect>
+           </property>
+           <layout class="QGridLayout" name="gridLayout_9">
+            <item row="5" column="0">
+             <spacer name="verticalSpacer_2">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>40</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="11" column="0">
+             <spacer name="verticalSpacer_5">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>40</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="14" column="0">
+             <spacer name="verticalSpacer_6">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>40</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="10" column="0">
+             <widget class="QGroupBox" name="connections">
+              <property name="title">
+               <string>Connections</string>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_6">
+               <item row="0" column="0">
+                <widget class="QLabel" name="inlet_size">
+                 <property name="text">
+                  <string>Inlet Size:</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="1">
+                <widget class="QLineEdit" name="inlet_size_2">
+                 <property name="placeholderText">
+                  <string>Input size here</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="2">
+                <widget class="QLabel" name="outlet_size">
+                 <property name="text">
+                  <string>Outlet Size:</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="3">
+                <widget class="QLineEdit" name="outlet_size_2">
+                 <property name="placeholderText">
+                  <string>Input size here</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="0">
+                <widget class="QLabel" name="inlet_facing">
+                 <property name="text">
+                  <string>Inlet Facing:</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="1">
+                <widget class="QComboBox" name="inlet_facing_2">
+                 <item>
+                  <property name="text">
+                   <string>Raised Face (RF)</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>Flat Face (FF)</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>Ring-Type Joint (RTJ)</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>Tongue-and-Groove (T&amp;G)</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>Male-and-Female (M&amp;F)</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>Other</string>
+                  </property>
+                 </item>
+                </widget>
+               </item>
+               <item row="1" column="2">
+                <widget class="QLabel" name="outlet_facing">
+                 <property name="text">
+                  <string>Outlet Facing:</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="3">
+                <widget class="QComboBox" name="outlet_facing_2">
+                 <item>
+                  <property name="text">
+                   <string>Raised Face (RF)</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>Flat Face (FF)</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>Ring-Type Joint (RTJ)</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>Tongue-and-Groove (T&amp;G)</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>Male-and-Female (M&amp;F)</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>Other</string>
+                  </property>
+                 </item>
+                </widget>
+               </item>
+               <item row="2" column="1">
+                <widget class="QLineEdit" name="inlet_facing_3">
+                 <property name="enabled">
+                  <bool>false</bool>
+                 </property>
+                 <property name="readOnly">
+                  <bool>true</bool>
+                 </property>
+                 <property name="placeholderText">
+                  <string>Specify if other</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="3">
+                <widget class="QLineEdit" name="outlet_facing_3">
+                 <property name="enabled">
+                  <bool>false</bool>
+                 </property>
+                 <property name="readOnly">
+                  <bool>true</bool>
+                 </property>
+                 <property name="placeholderText">
+                  <string>Specify if other</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item row="7" column="0">
+             <spacer name="verticalSpacer_3">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>40</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="6" column="0">
+             <widget class="QGroupBox" name="selection_basis">
+              <property name="title">
+               <string>Selection Basis</string>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_5">
+               <item row="0" column="0">
+                <widget class="QLabel" name="asme_code">
+                 <property name="text">
+                  <string>ASME Sec VIII Code:</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="1">
+                <widget class="QComboBox" name="asme_code_2">
+                 <property name="mouseTracking">
+                  <bool>false</bool>
+                 </property>
+                 <property name="focusPolicy">
+                  <enum>Qt::WheelFocus</enum>
+                 </property>
+                 <property name="acceptDrops">
+                  <bool>false</bool>
+                 </property>
+                 <item>
+                  <property name="text">
+                   <string>Yes</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>Yes with U stamp</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>No</string>
+                  </property>
+                 </item>
+                </widget>
+               </item>
+               <item row="0" column="2">
+                <widget class="QLineEdit" name="asme_code_3">
+                 <property name="enabled">
+                  <bool>false</bool>
+                 </property>
+                 <property name="readOnly">
+                  <bool>true</bool>
+                 </property>
+                 <property name="placeholderText">
+                  <string>Specify if no</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="0">
+                <widget class="QLabel" name="api_code">
+                 <property name="text">
+                  <string>API 526 Code:</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="1">
+                <widget class="QComboBox" name="api_code_2">
+                 <item>
+                  <property name="text">
+                   <string>Yes</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>No</string>
+                  </property>
+                 </item>
+                </widget>
+               </item>
+               <item row="1" column="2">
+                <widget class="QLineEdit" name="api_code_3">
+                 <property name="enabled">
+                  <bool>false</bool>
+                 </property>
+                 <property name="readOnly">
+                  <bool>true</bool>
+                 </property>
+                 <property name="placeholderText">
+                  <string>Specify if no</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="0">
+                <widget class="QLabel" name="fire_condition">
+                 <property name="text">
+                  <string>Fire Condition:</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="1">
+                <widget class="QComboBox" name="fire_condition_2">
+                 <item>
+                  <property name="text">
+                   <string>No</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>Yes</string>
+                  </property>
+                 </item>
+                </widget>
+               </item>
+               <item row="3" column="0">
+                <widget class="QLabel" name="rupture_disk">
+                 <property name="text">
+                  <string>Rupture Disk Present:</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="3" column="1">
+                <widget class="QComboBox" name="rupture_disk_2">
+                 <item>
+                  <property name="text">
+                   <string>No</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>Yes</string>
+                  </property>
+                 </item>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item row="9" column="0">
+             <spacer name="verticalSpacer_4">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>40</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="1" column="0">
+             <spacer name="verticalSpacer">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>40</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="2" column="0" rowspan="3">
+             <widget class="QGroupBox" name="equipment_info">
+              <property name="title">
+               <string>General Equipment Information (optional)</string>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_4">
+               <item row="0" column="0">
+                <widget class="QLabel" name="item_number">
+                 <property name="text">
+                  <string>Item Number:</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="1">
+                <widget class="QLineEdit" name="item_number_2">
+                 <property name="placeholderText">
+                  <string>Input text here</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="2">
+                <widget class="QLabel" name="service_line_number">
+                 <property name="text">
+                  <string>Service Line Number:</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="3">
+                <widget class="QLineEdit" name="service_line_number_2">
+                 <property name="placeholderText">
+                  <string>Input text here</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="0">
+                <widget class="QLabel" name="tag_number">
+                 <property name="text">
+                  <string>Tag Number:</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="1">
+                <widget class="QLineEdit" name="tag_number_2">
+                 <property name="placeholderText">
+                  <string>Input text here</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="2">
+                <widget class="QLabel" name="number_required">
+                 <property name="text">
+                  <string>Number Required:</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="3">
+                <widget class="QLineEdit" name="number_required_2">
+                 <property name="placeholderText">
+                  <string>Input text here</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item row="8" column="0">
+             <widget class="QGroupBox" name="valve_design">
+              <property name="title">
+               <string>Valve Design</string>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_2">
+               <item row="5" column="0">
+                <widget class="QLabel" name="seat_tightness">
+                 <property name="text">
+                  <string>Seat Tightness:</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="0">
+                <widget class="QLabel" name="nozzle_type">
+                 <property name="text">
+                  <string>Nozzle Type</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="4" column="1">
+                <widget class="QComboBox" name="bonnet_type_2">
+                 <item>
+                  <property name="text">
+                   <string>Open</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>Closed</string>
+                  </property>
+                 </item>
+                </widget>
+               </item>
+               <item row="3" column="1">
+                <widget class="QLineEdit" name="nozzle_type_3">
+                 <property name="enabled">
+                  <bool>false</bool>
+                 </property>
+                 <property name="readOnly">
+                  <bool>true</bool>
+                 </property>
+                 <property name="placeholderText">
+                  <string>Specify if other</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="6" column="1">
+                <widget class="QLineEdit" name="seat_tightness_3">
+                 <property name="enabled">
+                  <bool>false</bool>
+                 </property>
+                 <property name="readOnly">
+                  <bool>true</bool>
+                 </property>
+                 <property name="placeholderText">
+                  <string>Specify if other</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="0">
+                <widget class="QLabel" name="design_type">
+                 <property name="text">
+                  <string>Design Type:</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="1">
+                <widget class="QComboBox" name="nozzle_type_2">
+                 <item>
+                  <property name="text">
+                   <string>Full</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>Semi</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>Other</string>
+                  </property>
+                 </item>
+                </widget>
+               </item>
+               <item row="0" column="1">
+                <widget class="QComboBox" name="design_type_2">
+                 <property name="cursor">
+                  <cursorShape>ArrowCursor</cursorShape>
+                 </property>
+                 <item>
+                  <property name="text">
+                   <string>Conventional</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>Balanced Bellows</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>Balanced Piston</string>
+                  </property>
+                 </item>
+                </widget>
+               </item>
+               <item row="4" column="0">
+                <widget class="QLabel" name="bonnet_type">
+                 <property name="text">
+                  <string>Bonnet Type:</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="5" column="1">
+                <widget class="QComboBox" name="seat_tightness_2">
+                 <item>
+                  <property name="text">
+                   <string>API 527</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>Other</string>
+                  </property>
+                 </item>
+                </widget>
+               </item>
+               <item row="1" column="0">
+                <widget class="QLabel" name="relief_device_role">
+                 <property name="text">
+                  <string>Relief Device Application</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="1">
+                <widget class="QComboBox" name="relief_device_role_2">
+                 <item>
+                  <property name="text">
+                   <string>Single device</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>Additional device</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>Supplemental device</string>
+                  </property>
+                 </item>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item row="12" column="0">
+             <widget class="QGroupBox" name="materials">
+              <property name="title">
+               <string>Materials</string>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_7">
+               <item row="0" column="0">
+                <widget class="QLabel" name="body">
+                 <property name="text">
+                  <string>Body:</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="1">
+                <widget class="QLineEdit" name="body_2">
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="placeholderText">
+                  <string>Specify body material here</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="2">
+                <widget class="QLabel" name="bonnet">
+                 <property name="text">
+                  <string>Bonnet:</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="3">
+                <widget class="QLineEdit" name="bonnet_2">
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="placeholderText">
+                  <string>Specify bonnet material here</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="4">
+                <widget class="QLabel" name="seat">
+                 <property name="text">
+                  <string>Seat (Nozzle):</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="5">
+                <widget class="QLineEdit" name="seat_2">
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="placeholderText">
+                  <string>specify seat material here</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="0">
+                <widget class="QLabel" name="disk">
+                 <property name="text">
+                  <string>Disk</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="1">
+                <widget class="QLineEdit" name="disk_2">
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="placeholderText">
+                  <string>Specify disk material here</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="2">
+                <widget class="QLabel" name="resilient_seat">
+                 <property name="text">
+                  <string>Resilient Seat:</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="3">
+                <widget class="QLineEdit" name="resilient_seat_2">
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="placeholderText">
+                  <string>Specify resilient seat material here</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="4">
+                <widget class="QLabel" name="guide">
+                 <property name="text">
+                  <string>Guide:</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="5">
+                <widget class="QLineEdit" name="guide_2">
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="placeholderText">
+                  <string>Specify guide material here</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="0">
+                <widget class="QLabel" name="adjusting_rings">
+                 <property name="text">
+                  <string>Adjusting Ring(s):</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="1">
+                <widget class="QLineEdit" name="adjusting_rings_2">
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="placeholderText">
+                  <string>Specify adjusting ring(s) material here</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="2">
+                <widget class="QLabel" name="spring">
+                 <property name="text">
+                  <string>Spring:</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="3">
+                <widget class="QLineEdit" name="spring_2">
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="placeholderText">
+                  <string>Specify spring material here</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="4">
+                <widget class="QLabel" name="bellows">
+                 <property name="text">
+                  <string>Bellows:</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="5">
+                <widget class="QLineEdit" name="bellows_2">
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="placeholderText">
+                  <string>Specify bellows material here</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="3" column="0">
+                <widget class="QLabel" name="balanced_piston">
+                 <property name="text">
+                  <string>Balanced Pistion:</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="3" column="1">
+                <widget class="QLineEdit" name="balanced_piston_2">
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="placeholderText">
+                  <string>Specify balanced piston material</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="3" column="2">
+                <widget class="QLabel" name="nace">
+                 <property name="text">
+                  <string>Comply with NACE:</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="3" column="3">
+                <widget class="QComboBox" name="nace_2">
+                 <item>
+                  <property name="text">
+                   <string>No</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>Yes</string>
+                  </property>
+                 </item>
+                </widget>
+               </item>
+               <item row="3" column="4">
+                <widget class="QLabel" name="internal_gasket">
+                 <property name="text">
+                  <string>Internal Gasket:</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="3" column="5">
+                <widget class="QLineEdit" name="internal_gasket_2">
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="placeholderText">
+                  <string>Specify interal gasket material here:</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item row="0" column="0">
+             <widget class="QGroupBox" name="document_info">
+              <property name="title">
+               <string>Document Information (optional)</string>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_3">
+               <item row="0" column="0">
+                <widget class="QLabel" name="sheet_number">
+                 <property name="text">
+                  <string>Sheet Number:</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="1">
+                <widget class="QLineEdit" name="sheet_number_2">
+                 <property name="placeholderText">
+                  <string>Input text here</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="2">
+                <widget class="QLabel" name="job_number">
+                 <property name="text">
+                  <string>Job Number:</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="3">
+                <widget class="QLineEdit" name="job_number_2">
+                 <property name="placeholderText">
+                  <string>Input text here</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="0">
+                <widget class="QLabel" name="requisition_number">
+                 <property name="text">
+                  <string>Requisition Number: </string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="1">
+                <widget class="QLineEdit" name="requisition_number_2">
+                 <property name="placeholderText">
+                  <string>Input text here</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="2">
+                <widget class="QLabel" name="date">
+                 <property name="text">
+                  <string>Date:</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="3">
+                <widget class="QDateEdit" name="date_2">
+                 <property name="dateTime">
+                  <datetime>
+                   <hour>0</hour>
+                   <minute>0</minute>
+                   <second>0</second>
+                   <year>2022</year>
+                   <month>1</month>
+                   <day>1</day>
+                  </datetime>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="0">
+                <widget class="QLabel" name="revision">
+                 <property name="text">
+                  <string>Revision</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="1">
+                <widget class="QLineEdit" name="revision_2">
+                 <property name="placeholderText">
+                  <string>Input text here</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="2">
+                <widget class="QLabel" name="by">
+                 <property name="text">
+                  <string>By:</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="3">
+                <widget class="QLineEdit" name="by_2">
+                 <property name="placeholderText">
+                  <string>Input text here</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item row="13" column="0">
+             <widget class="QGroupBox" name="accessories">
+              <property name="title">
+               <string>Accessories</string>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_8">
+               <item row="0" column="0">
+                <widget class="QLabel" name="cap">
+                 <property name="text">
+                  <string>Cap:</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="1">
+                <widget class="QComboBox" name="cap_2">
+                 <item>
+                  <property name="text">
+                   <string>Screwed</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>Bolted</string>
+                  </property>
+                 </item>
+                </widget>
+               </item>
+               <item row="0" column="2">
+                <widget class="QLabel" name="test_gag">
+                 <property name="text">
+                  <string>Test Gag:</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="3">
+                <widget class="QComboBox" name="test_gag_2">
+                 <item>
+                  <property name="text">
+                   <string>Yes</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>No</string>
+                  </property>
+                 </item>
+                </widget>
+               </item>
+               <item row="1" column="0">
+                <widget class="QLabel" name="lifting_lever">
+                 <property name="text">
+                  <string>Lifting Lever:</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="1">
+                <widget class="QComboBox" name="lifting_lever_2">
+                 <item>
+                  <property name="text">
+                   <string>Plain</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>Packed</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>None</string>
+                  </property>
+                 </item>
+                </widget>
+               </item>
+               <item row="1" column="2">
+                <widget class="QLabel" name="bug_screen">
+                 <property name="text">
+                  <string>Bug Screen</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="3">
+                <widget class="QComboBox" name="bug_screen_2">
+                 <item>
+                  <property name="text">
+                   <string>Yes</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>No</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>Other</string>
+                  </property>
+                 </item>
+                </widget>
+               </item>
+               <item row="2" column="3">
+                <widget class="QLineEdit" name="bug_screen_3">
+                 <property name="enabled">
+                  <bool>true</bool>
+                 </property>
+                 <property name="readOnly">
+                  <bool>true</bool>
+                 </property>
+                 <property name="placeholderText">
+                  <string>Specift if other</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_2">
+       <attribute name="title">
+        <string>Fluid Properties</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_11">
+        <item row="0" column="0">
+         <widget class="QScrollArea" name="fluid_properties">
+          <property name="widgetResizable">
+           <bool>true</bool>
+          </property>
+          <widget class="QWidget" name="scrollAreaWidgetContents_2">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>965</width>
+             <height>825</height>
+            </rect>
+           </property>
+           <widget class="QGroupBox" name="unit_basis">
+            <property name="geometry">
+             <rect>
+              <x>9</x>
+              <y>9</y>
+              <width>251</width>
+              <height>72</height>
+             </rect>
+            </property>
+            <property name="title">
+             <string>Unit Basis</string>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_12">
+             <item row="0" column="0">
+              <widget class="QLabel" name="unit_basis_2">
+               <property name="text">
+                <string>Select the unit basis calculations (molar or mass)</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="0">
+              <widget class="QComboBox" name="unit_basis_3">
+               <item>
+                <property name="text">
+                 <string>Mass</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Molar</string>
+                </property>
+               </item>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+           <widget class="QGroupBox" name="fluid_components">
+            <property name="geometry">
+             <rect>
+              <x>9</x>
+              <y>87</y>
+              <width>951</width>
+              <height>251</height>
+             </rect>
+            </property>
+            <property name="title">
+             <string>Fluid Components and Compositions</string>
+            </property>
+            <widget class="QScrollArea" name="fluid_properties_2">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>23</y>
+               <width>931</width>
+               <height>189</height>
+              </rect>
+             </property>
+             <property name="widgetResizable">
+              <bool>true</bool>
+             </property>
+             <widget class="QWidget" name="scrollAreaWidgetContents_3">
+              <property name="geometry">
+               <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>912</width>
+                <height>434</height>
+               </rect>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_14">
+               <item row="0" column="5">
+                <widget class="QLabel" name="fluid_properties_composition">
+                 <property name="text">
+                  <string>Mass Composition</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="1">
+                <widget class="QLabel" name="fluid_properties_name">
+                 <property name="text">
+                  <string>Fluid Name</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item row="11" column="0">
+                <widget class="QLabel" name="component_11">
+                 <property name="text">
+                  <string>Component 11</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="3">
+                <widget class="QLabel" name="component_2_nist">
+                 <property name="text">
+                  <string>-</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="4">
+                <widget class="QLabel" name="component_1_nist_identification">
+                 <property name="text">
+                  <string>-</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item row="4" column="0">
+                <widget class="QLabel" name="component_4">
+                 <property name="text">
+                  <string>Component 4</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="8" column="0">
+                <widget class="QLabel" name="component_8">
+                 <property name="text">
+                  <string>Component 8</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="12" column="0">
+                <widget class="QLabel" name="component_12">
+                 <property name="text">
+                  <string>Component 12</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="1">
+                <widget class="QLineEdit" name="component_1_name"/>
+               </item>
+               <item row="1" column="5">
+                <widget class="QLineEdit" name="component_1_composition"/>
+               </item>
+               <item row="13" column="0">
+                <widget class="QLabel" name="component_13">
+                 <property name="text">
+                  <string>Component 13</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="1">
+                <widget class="QLineEdit" name="component_2_name"/>
+               </item>
+               <item row="10" column="0">
+                <widget class="QLabel" name="component_10">
+                 <property name="text">
+                  <string>Component 10</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="3">
+                <widget class="QLabel" name="fluid_properties_nist">
+                 <property name="text">
+                  <string>NIST 
+ REFPROP</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item row="9" column="0">
+                <widget class="QLabel" name="component_9">
+                 <property name="text">
+                  <string>Component 9</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="3">
+                <widget class="QLabel" name="component_1_nist">
+                 <property name="text">
+                  <string>-</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="4">
+                <widget class="QLabel" name="fluid_properties_nist_identification">
+                 <property name="text">
+                  <string>NIST 
+ Identification</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="4">
+                <widget class="QLabel" name="component_2_nist_identification">
+                 <property name="text">
+                  <string>-</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item row="7" column="0">
+                <widget class="QLabel" name="component_7">
+                 <property name="text">
+                  <string>Component 7</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="5" column="0">
+                <widget class="QLabel" name="component_5">
+                 <property name="text">
+                  <string>Component 5</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="6" column="0">
+                <widget class="QLabel" name="component_6">
+                 <property name="text">
+                  <string>Component 6</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="5">
+                <widget class="QLineEdit" name="component_2_composition"/>
+               </item>
+               <item row="1" column="0">
+                <widget class="QLabel" name="component_1">
+                 <property name="text">
+                  <string>Component 1</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="14" column="0">
+                <widget class="QLabel" name="component_14">
+                 <property name="text">
+                  <string>Component 14</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="0">
+                <widget class="QLabel" name="component_2">
+                 <property name="text">
+                  <string>Component 2</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="3" column="0">
+                <widget class="QLabel" name="component_3">
+                 <property name="text">
+                  <string>Component 3</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="15" column="0">
+                <widget class="QLabel" name="component_15">
+                 <property name="text">
+                  <string>Component 15</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="3" column="1">
+                <widget class="QLineEdit" name="component_3_name"/>
+               </item>
+               <item row="4" column="1">
+                <widget class="QLineEdit" name="component_4_name"/>
+               </item>
+               <item row="5" column="1">
+                <widget class="QLineEdit" name="component_5_name"/>
+               </item>
+               <item row="6" column="1">
+                <widget class="QLineEdit" name="component_6_name"/>
+               </item>
+               <item row="7" column="1">
+                <widget class="QLineEdit" name="component_7_name"/>
+               </item>
+               <item row="8" column="1">
+                <widget class="QLineEdit" name="component_8_name"/>
+               </item>
+               <item row="9" column="1">
+                <widget class="QLineEdit" name="component_9_name"/>
+               </item>
+               <item row="10" column="1">
+                <widget class="QLineEdit" name="component_10_name"/>
+               </item>
+               <item row="11" column="1">
+                <widget class="QLineEdit" name="component_11_name"/>
+               </item>
+               <item row="12" column="1">
+                <widget class="QLineEdit" name="component_12_name"/>
+               </item>
+               <item row="13" column="1">
+                <widget class="QLineEdit" name="component_13_name"/>
+               </item>
+               <item row="14" column="1">
+                <widget class="QLineEdit" name="component_14_name"/>
+               </item>
+               <item row="15" column="1">
+                <widget class="QLineEdit" name="component_15_name"/>
+               </item>
+               <item row="3" column="3">
+                <widget class="QLabel" name="component_3_nist">
+                 <property name="text">
+                  <string>-</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item row="4" column="3">
+                <widget class="QLabel" name="component_4_nist">
+                 <property name="text">
+                  <string>-</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item row="5" column="3">
+                <widget class="QLabel" name="component_5_nist">
+                 <property name="text">
+                  <string>-</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item row="6" column="3">
+                <widget class="QLabel" name="component_6_nist">
+                 <property name="text">
+                  <string>-</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item row="7" column="3">
+                <widget class="QLabel" name="component_7_nist">
+                 <property name="text">
+                  <string>-</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item row="8" column="3">
+                <widget class="QLabel" name="component_8_nist">
+                 <property name="text">
+                  <string>-</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item row="9" column="3">
+                <widget class="QLabel" name="component_9_nist">
+                 <property name="text">
+                  <string>-</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item row="10" column="3">
+                <widget class="QLabel" name="component_10_nist">
+                 <property name="text">
+                  <string>-</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item row="11" column="3">
+                <widget class="QLabel" name="component_11_nist">
+                 <property name="text">
+                  <string>-</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item row="12" column="3">
+                <widget class="QLabel" name="component_12_nist">
+                 <property name="text">
+                  <string>-</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item row="13" column="3">
+                <widget class="QLabel" name="component_13_nist">
+                 <property name="text">
+                  <string>-</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item row="14" column="3">
+                <widget class="QLabel" name="component_14_nist">
+                 <property name="text">
+                  <string>-</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item row="15" column="3">
+                <widget class="QLabel" name="component_15_nist">
+                 <property name="text">
+                  <string>-</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item row="3" column="4">
+                <widget class="QLabel" name="component_3_nist_identification">
+                 <property name="text">
+                  <string>-</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item row="4" column="4">
+                <widget class="QLabel" name="component_4_nist_identification">
+                 <property name="text">
+                  <string>-</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item row="5" column="4">
+                <widget class="QLabel" name="component_5_nist_identification">
+                 <property name="text">
+                  <string>-</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item row="6" column="4">
+                <widget class="QLabel" name="component_6_nist_identification">
+                 <property name="text">
+                  <string>-</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item row="7" column="4">
+                <widget class="QLabel" name="component_7_nist_identification">
+                 <property name="text">
+                  <string>-</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item row="8" column="4">
+                <widget class="QLabel" name="component_8_nist_identification">
+                 <property name="text">
+                  <string>-</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item row="9" column="4">
+                <widget class="QLabel" name="component_9_nist_identification">
+                 <property name="text">
+                  <string>-</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item row="10" column="4">
+                <widget class="QLabel" name="component_10_nist_identification">
+                 <property name="text">
+                  <string>-</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item row="11" column="4">
+                <widget class="QLabel" name="component_11_nist_identification">
+                 <property name="text">
+                  <string>-</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item row="12" column="4">
+                <widget class="QLabel" name="component_12_nist_identification">
+                 <property name="text">
+                  <string>-</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item row="13" column="4">
+                <widget class="QLabel" name="component_13_nist_identification">
+                 <property name="text">
+                  <string>-</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item row="14" column="4">
+                <widget class="QLabel" name="component_14_nist_identification">
+                 <property name="text">
+                  <string>-</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item row="15" column="4">
+                <widget class="QLabel" name="component_15_nist_identification">
+                 <property name="text">
+                  <string>-</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item row="3" column="5">
+                <widget class="QLineEdit" name="component_3_composition"/>
+               </item>
+               <item row="4" column="5">
+                <widget class="QLineEdit" name="component_4_composition"/>
+               </item>
+               <item row="5" column="5">
+                <widget class="QLineEdit" name="component_5_composition"/>
+               </item>
+               <item row="6" column="5">
+                <widget class="QLineEdit" name="component_6_composition"/>
+               </item>
+               <item row="7" column="5">
+                <widget class="QLineEdit" name="component_7_composition"/>
+               </item>
+               <item row="8" column="5">
+                <widget class="QLineEdit" name="component_8_composition"/>
+               </item>
+               <item row="9" column="5">
+                <widget class="QLineEdit" name="component_9_composition"/>
+               </item>
+               <item row="10" column="5">
+                <widget class="QLineEdit" name="component_10_composition"/>
+               </item>
+               <item row="11" column="5">
+                <widget class="QLineEdit" name="component_11_composition"/>
+               </item>
+               <item row="12" column="5">
+                <widget class="QLineEdit" name="component_12_composition"/>
+               </item>
+               <item row="13" column="5">
+                <widget class="QLineEdit" name="component_13_composition"/>
+               </item>
+               <item row="14" column="5">
+                <widget class="QLineEdit" name="component_14_composition"/>
+               </item>
+               <item row="15" column="5">
+                <widget class="QLineEdit" name="component_15_composition"/>
+               </item>
+              </layout>
+             </widget>
+            </widget>
+            <widget class="QLabel" name="total_composition">
+             <property name="geometry">
+              <rect>
+               <x>580</x>
+               <y>220</y>
+               <width>111</width>
+               <height>20</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>Total Composition</string>
+             </property>
+            </widget>
+            <widget class="QLineEdit" name="total_composition_2">
+             <property name="enabled">
+              <bool>false</bool>
+             </property>
+             <property name="geometry">
+              <rect>
+               <x>683</x>
+               <y>220</y>
+               <width>231</width>
+               <height>20</height>
+              </rect>
+             </property>
+            </widget>
+           </widget>
+           <widget class="QGroupBox" name="conditions">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>350</y>
+              <width>601</width>
+              <height>191</height>
+             </rect>
+            </property>
+            <property name="title">
+             <string>Conditions</string>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_15">
+             <item row="4" column="0">
+              <widget class="QLabel" name="total_back_pressure">
+               <property name="text">
+                <string>Total Back Pressure P2 (barg)</string>
+               </property>
+              </widget>
+             </item>
+             <item row="5" column="1">
+              <widget class="QLineEdit" name="relieving_pressure_2">
+               <property name="enabled">
+                <bool>true</bool>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="placeholderText">
+                <string>Enter relieving pressure here</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="1">
+              <widget class="QLineEdit" name="set_pressure_2">
+               <property name="text">
+                <string/>
+               </property>
+               <property name="placeholderText">
+                <string>Enter pressure here</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QLineEdit" name="relieving_temp_2">
+               <property name="placeholderText">
+                <string>Enter temperature here</string>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="1">
+              <widget class="QLineEdit" name="overpressure_percentage_2">
+               <property name="text">
+                <string/>
+               </property>
+               <property name="placeholderText">
+                <string>Enter over pressure here</string>
+               </property>
+              </widget>
+             </item>
+             <item row="4" column="1">
+              <widget class="QLineEdit" name="total_back_pressure_2">
+               <property name="placeholderText">
+                <string>Enter back pressure here</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="0">
+              <widget class="QLabel" name="set_pressure">
+               <property name="text">
+                <string>PRV Set Pressure (barg)</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="0">
+              <widget class="QLabel" name="relieving_temp">
+               <property name="text">
+                <string>Relieving Temperature (°C)</string>
+               </property>
+              </widget>
+             </item>
+             <item row="5" column="0">
+              <widget class="QLabel" name="relieving_pressure">
+               <property name="text">
+                <string>Relieving Pressure P1 (barg)</string>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="0">
+              <widget class="QLabel" name="overpressure_percentage">
+               <property name="text">
+                <string>Maximum Allowable Accumulated Pressure (%)</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="0">
+              <widget class="QLabel" name="equipment_mawp">
+               <property name="text">
+                <string>Equipment MAWP (barg)</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="1">
+              <widget class="QLineEdit" name="equipment_mawp_2">
+               <property name="placeholderText">
+                <string>Enter pressure here</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+           <widget class="QGroupBox" name="fluid_properties_results">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>600</y>
+              <width>511</width>
+              <height>211</height>
+             </rect>
+            </property>
+            <property name="title">
+             <string>Fluid Properties</string>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_16">
+             <item row="4" column="1">
+              <widget class="QLineEdit" name="molecular_weight_2">
+               <property name="placeholderText">
+                <string>Input manually here</string>
+               </property>
+              </widget>
+             </item>
+             <item row="5" column="1">
+              <widget class="QLineEdit" name="density_2">
+               <property name="placeholderText">
+                <string>Input manually here</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="1">
+              <widget class="QLineEdit" name="specific_heat_cp_2">
+               <property name="placeholderText">
+                <string>Input manually here</string>
+               </property>
+              </widget>
+             </item>
+             <item row="5" column="0">
+              <widget class="QLabel" name="density">
+               <property name="text">
+                <string>Density ρ (kg/m3)</string>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="0">
+              <widget class="QLabel" name="compressibility_factor">
+               <property name="text">
+                <string>Compressibility Factor Z</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="0">
+              <widget class="QLabel" name="specific_heat_cp">
+               <property name="text">
+                <string>Specific heat Cp (J/(kg K))</string>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="1">
+              <widget class="QLineEdit" name="compressibility_factor_2">
+               <property name="placeholderText">
+                <string>Input manually here</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QComboBox" name="fluid_phase_2">
+               <property name="currentText">
+                <string>Select manually here</string>
+               </property>
+               <item>
+                <property name="text">
+                 <string>Select manually here</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Vapour</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Liquid</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Liquid/Vapour</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Supercritical</string>
+                </property>
+               </item>
+              </widget>
+             </item>
+             <item row="0" column="0">
+              <widget class="QLabel" name="fluid_phase">
+               <property name="text">
+                <string>Fluid Phase</string>
+               </property>
+              </widget>
+             </item>
+             <item row="4" column="0">
+              <widget class="QLabel" name="molecular_weight">
+               <property name="text">
+                <string>Molecular Weight M (kg/kg-mol)</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="0">
+              <widget class="QLabel" name="specific_heat_cv">
+               <property name="text">
+                <string>Specific heat Cv (J/(kg K))</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="1">
+              <widget class="QLineEdit" name="specific_heat_cv_2">
+               <property name="placeholderText">
+                <string>Input manually here</string>
+               </property>
+              </widget>
+             </item>
+             <item row="6" column="0">
+              <widget class="QLabel" name="viscosity">
+               <property name="text">
+                <string>Viscosity μ (cP)</string>
+               </property>
+              </widget>
+             </item>
+             <item row="6" column="1">
+              <widget class="QLineEdit" name="viscosity_2">
+               <property name="placeholderText">
+                <string>Input manually here</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+           <widget class="QPushButton" name="nist_properties_generation">
+            <property name="enabled">
+             <bool>false</bool>
+            </property>
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>560</y>
+              <width>331</width>
+              <height>23</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Generate Properties From NIST Refprop</string>
+            </property>
+           </widget>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_3">
+       <attribute name="title">
+        <string>Datasheet Generation</string>
+       </attribute>
+       <widget class="QPushButton" name="generate_datasheet">
+        <property name="geometry">
+         <rect>
+          <x>670</x>
+          <y>430</y>
+          <width>121</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Generate Datasheet</string>
+        </property>
+       </widget>
+       <widget class="QGroupBox" name="variables">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>510</y>
+          <width>461</width>
+          <height>171</height>
+         </rect>
+        </property>
+        <property name="title">
+         <string>Variables</string>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_17">
+         <item row="2" column="0">
+          <widget class="QLabel" name="Kc">
+           <property name="text">
+            <string>Combination Correction Factor Kc</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="Kb">
+           <property name="text">
+            <string>Capacity Correction Factor Kb</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="0">
+          <widget class="QLabel" name="mass_flow">
+           <property name="text">
+            <string>Required Mass Flow W (kg/h)</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="1">
+          <widget class="QLineEdit" name="mass_flow_2">
+           <property name="placeholderText">
+            <string>Input manually here</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QLineEdit" name="Kb_2">
+           <property name="placeholderText">
+            <string>Input manually here</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QLineEdit" name="Kd_2">
+           <property name="placeholderText">
+            <string>Input manually here</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QLineEdit" name="Kc_2">
+           <property name="placeholderText">
+            <string>Input manually here</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="0">
+          <widget class="QLabel" name="Kd">
+           <property name="text">
+            <string>Effective Coefficient of discharge Kd</string>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="0">
+          <widget class="QLabel" name="vol_flow">
+           <property name="text">
+            <string>Required Volumetric Flow (L/min)</string>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="1">
+          <widget class="QLineEdit" name="vol_flow_2">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="placeholderText">
+            <string>Specify mass flow to calculate</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QGroupBox" name="steam_conditions">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>210</y>
+          <width>461</width>
+          <height>91</height>
+         </rect>
+        </property>
+        <property name="title">
+         <string>Steam Conditions</string>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_19">
+         <item row="0" column="0">
+          <widget class="QLabel" name="KN">
+           <property name="text">
+            <string>Correction Factor for Napier Equation KN</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QLineEdit" name="KN_2">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="KSH">
+           <property name="text">
+            <string>Superheat Correction Factor KSH</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QLineEdit" name="KSH_2">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QGroupBox" name="liquid_phase_conditions">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>320</y>
+          <width>461</width>
+          <height>181</height>
+         </rect>
+        </property>
+        <property name="title">
+         <string>Liquid Phase Conditions</string>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_18">
+         <item row="1" column="0">
+          <widget class="QLabel" name="Kp">
+           <property name="text">
+            <string>Correction Factor due to Overpressure Kp</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QComboBox" name="capacity_certification_requirement_2">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <item>
+            <property name="text">
+             <string>Yes</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>No</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item row="4" column="1">
+          <widget class="QLineEdit" name="Kv_2">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="placeholderText">
+            <string>Specify a flow to calculate Kv Factor</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="0">
+          <widget class="QLabel" name="capacity_certification_requirement">
+           <property name="text">
+            <string>Capacity Certification Requirement</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLabel" name="Kw">
+           <property name="text">
+            <string>Correction Factor due to Backpressure Kw</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QLineEdit" name="Kw_2">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QLineEdit" name="Kp_2">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="0">
+          <widget class="QLabel" name="Kv">
+           <property name="text">
+            <string>Correction Factor due to Viscosity Kv</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="0">
+          <widget class="QLabel" name="Re">
+           <property name="text">
+            <string>Reynolds Number Re</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="1">
+          <widget class="QLineEdit" name="Re_2">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="placeholderText">
+            <string>Specify a flow to calculate Reynolds Number</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QGroupBox" name="vapour_conditions">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>20</y>
+          <width>461</width>
+          <height>181</height>
+         </rect>
+        </property>
+        <property name="title">
+         <string>Vapour Conditions</string>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_13">
+         <item row="1" column="0">
+          <widget class="QLabel" name="pcf">
+           <property name="text">
+            <string>Critical Flow Pressure Pcf (bar)</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="0">
+          <widget class="QLabel" name="critical_flow_coefficient">
+           <property name="text">
+            <string>Coefficient of Critical Flow C</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QLineEdit" name="k_2">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="1">
+          <widget class="QLineEdit" name="critical_flow_coefficient_2">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLabel" name="vapour_state">
+           <property name="text">
+            <string>Vapour Flow State</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="0">
+          <widget class="QLabel" name="k">
+           <property name="text">
+            <string>Ratio of Specific Heats k</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QLineEdit" name="pcf_2">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QComboBox" name="vapour_state_2">
+           <property name="enabled">
+            <bool>true</bool>
+           </property>
+           <item>
+            <property name="text">
+             <string>Edit manually here</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Critical</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Non-critical</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item row="4" column="0">
+          <widget class="QLabel" name="subcritical_flow_coefficient">
+           <property name="text">
+            <string>Coefficient of Subcritical Flow F2</string>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="1">
+          <widget class="QLineEdit" name="subcritical_flow_coefficient_2">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QGroupBox" name="warning_error_messages">
+        <property name="geometry">
+         <rect>
+          <x>540</x>
+          <y>30</y>
+          <width>381</width>
+          <height>291</height>
+         </rect>
+        </property>
+        <property name="title">
+         <string>Warnings and Error Messages</string>
+        </property>
+       </widget>
+       <widget class="QGroupBox" name="results">
+        <property name="geometry">
+         <rect>
+          <x>540</x>
+          <y>340</y>
+          <width>381</width>
+          <height>71</height>
+         </rect>
+        </property>
+        <property name="title">
+         <string>Results</string>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_20">
+         <item row="0" column="0">
+          <widget class="QLabel" name="discharge_area">
+           <property name="text">
+            <string>Effective Discharge Area (mm2)</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QLineEdit" name="discharge_area_2">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

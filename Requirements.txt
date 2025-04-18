@@ -1,0 +1,8 @@
+numpy
+pandas
+matplotlib
+PyQt5
+openpyxl
+scipy
+ctREFPROP
+
