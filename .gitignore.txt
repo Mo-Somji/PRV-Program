@@ -1,1 +1,7 @@
 DS_Store
+
+# Ignore all Excel files
+*.xlsx
+
+# EXCEPT the template (we want to keep this one)
+!Datasheets/Datasheet Template.xlsx
